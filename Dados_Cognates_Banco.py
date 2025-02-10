@@ -38,7 +38,7 @@ def data_cognatis_api(password, env_id, user_b64, password_b64, module_ids, subm
             "cache": True,
             "compact": True,
             "delimiter": ";",
-            "geoLevel": 3,
+            "geoLevel": 5,
             "where": [],
             "groupBy": [],
             "having": [],
@@ -113,10 +113,10 @@ def process_database(conn, engine, table_name, df_geo):
 
     conn.close()
 
-if __name__ == "__main__":
-    user = "data@leroym.com.br"
-    password = "Cog@2023"
-    env_id = 39
+if __name__ == 
+    user = 
+    password = 
+    env_id = 
 
     user_b64 = base64.b64encode(user.encode()).decode()
     password_b64 = base64.b64encode(password.encode()).decode()
@@ -127,22 +127,22 @@ if __name__ == "__main__":
 
     dbs = {
         "DEV": {
-            "dbname": "arcgisdev",
-            "user": "arcgisdev",
-            "password": "AVNS_PaPlVCInSYqz_KDQ7PA",
-            "host": "pg-arcgis-brlm-p-brl-dextech.f.aivencloud.com",
-            "port": "12833"
+            "dbname": "bando",
+            "user": "user",
+            "password": "senha",
+            "host": "host",
+            "port": "porta"
         },
         "PRD": {
-            "dbname": "arcgisprd",
-            "user": "arcgisprd",
-            "password": "AVNS_so500TuV8AZ8n_HKWFG",
-            "host": "pg-arcgis-brlm-p-brl-dextech.f.aivencloud.com",
-            "port": "12833"
-        }
+            "dbname": "bando",
+            "user": "user",
+            "password": "senha",
+            "host": "host",
+            "port": "porta"
+        },
     }
 
-    table_name = f'dados_cognatis_24_geolevel3'
+    table_name = f'dados_cognatis_24_geolevel5'
 
     for env, config in dbs.items():
         try:

@@ -95,13 +95,14 @@ print("Estabelecendo conexão com o banco de dados PostgreSQL...")
     # Conectar ao banco de dados
 try:
         conn = psycopg2.connect(
-            dbname="arcgisprd",
-            user="arcgisprd",
-            password="AVNS_so500TuV8AZ8n_HKWFG",
-            host="pg-arcgis-brlm-p-brl-dextech.f.aivencloud.com",
-            port="12833"
+           "PRD": {
+            "dbname": "bando",
+            "user": "user",
+            "password": "senha",
+            "host": "host",
+            "port": "porta"
         )
-        engine = create_engine('postgresql+psycopg2://arcgisprd:AVNS_so500TuV8AZ8n_HKWFG@pg-arcgis-brlm-p-brl-dextech.f.aivencloud.com:12833/arcgisprd')
+        engine = create_engine()
         print("Conexão com o banco de dados estabelecida com sucesso.")
 except psycopg2.OperationalError as e:
         print(f"Erro ao conectar ao banco de dados: {e}")

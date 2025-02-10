@@ -77,9 +77,9 @@ def data_cognatis_api(env_id, user_b64, password_b64, module_ids, submodule=None
 
 if __name__ == "__main__":
     # Dados de login
-    user = "data@leroym.com.br"
-    password = "Cog@2023"
-    env_id = 39
+    user = 
+    password = 
+    env_id = 
 
     # Codificar credenciais em Base64
     user_b64 = base64.b64encode(user.encode()).decode()
@@ -107,7 +107,7 @@ if __name__ == "__main__":
             print(ddf.head())
 
             # Configurar conexão com o banco de dados PostgreSQL
-            db_uri = "postgresql+psycopg2://arcgisprd:AVNS_so500TuV8AZ8n_HKWFG@pg-arcgis-brlm-p-brl-dextech.f.aivencloud.com:12833/arcgisprd"
+            db_uri = 
             engine = create_engine(db_uri)
             print("Conexão com o banco de dados estabelecida com sucesso.")
 
